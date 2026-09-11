@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueWave Development</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+BlueWave
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#team">Team</a></li>
+
+<li><a href="#shop">Bestellen</a></li>
+
+<li><a href="#cart">Winkelwagen</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button id="themeToggle">
+🌙
+</button>
+
+<a href="https://discord.gg/jouwserver" class="discord-btn" target="_blank">
+Join Discord
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Premium Discord &
+<span>Website Development</span>
+</h1>
+
+<p>
+
+Professionele Discord Bots,
+Discord Servers,
+Websites
+en maatwerk oplossingen.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#shop" class="primary-btn">
+
+Bestellen
+
+</a>
+
+<a href="#services" class="secondary-btn">
+
+Bekijk Services
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+
+<h2>100+</h2>
+
+<p>Projecten</p>
+
+</div>
+
+<div class="stat">
+
+<h2>75+</h2>
+
+<p>Klanten</p>
+
+</div>
+
+<div class="stat">
+
+<h2>24/7</h2>
+
+<p>Support</p>
+
+</div>
+
+<div class="stat">
+
+<h2>99%</h2>
+
+<p>Tevredenheid</p>
+
+</div>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>Onze Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🤖 Discord Bots</h3>
+
+<p>
+Custom bots met tickets,
+economy,
+AI,
+logs,
+moderatie,
+levels
+en nog veel meer.
+</p>
+
+<button class="buy-btn"
+data-name="Discord Bot"
+data-price="10">
+
+Toevoegen (€10)
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>💬 Discord Servers</h3>
+
+<p>
+
+Complete server setup,
+rollen,
+kanalen,
+permissions,
+tickets,
+logs,
+welkomstsystemen.
+
+</p>
+
+<button class="buy-btn"
+data-name="Discord Server"
+data-price="7">
+
+Toevoegen (€7)
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>🌐 Websites</h3>
+
+<p>
+
+Moderne premium websites,
+responsive,
+snel
+en volledig op maat.
+
+</p>
+
+<button class="buy-btn"
+data-name="Website"
+data-price="20">
+
+Toevoegen (€20)
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="team" class="team">
+
+<h2>Ons Team</h2>
+
+<div class="team-grid">
+
+<div class="member">
+
+<img src="images/owner.png" alt="Owner">
+
+<h3>Dilano4Real</h3>
+
+<p>Eigenaar</p>
+
+</div>
+
+<div class="member">
+
+<img src="images/dev.png" alt="Developer">
+
+<h3>Developer</h3>
+
+<p>Backend Specialist</p>
+
+</div>
+
+<div class="member">
+
+<img src="images/designer.png" alt="Designer">
+
+<h3>Designer</h3>
+
+<p>UI / UX Designer</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="shop" class="shop">
+
+<h2>Bestellen</h2>
+
+<div class="shop-grid">
+
+<div class="product">
+
+<h3>Discord Bot Premium</h3>
+
+<p>€10</p>
+
+<button class="buy-btn"
+data-name="Discord Bot Premium"
+data-price="10">
+
+Bestellen
+
+</button>
+
+</div>
+
+<div class="product">
+
+<h3>Discord Server Setup</h3>
+
+<p>€7</p>
+
+<button class="buy-btn"
+data-name="Discord Server Setup"
+data-price="7">
+
+Bestellen
+
+</button>
+
+</div>
+
+<div class="product">
+
+<h3>Premium Website</h3>
+
+<p>€20</p>
+
+<button class="buy-btn"
+data-name="Premium Website"
+data-price="20">
+
+Bestellen
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<section id="cart" class="cart">
+
+    <h2>🛒 Winkelwagen</h2>
+
+    <div class="cart-container">
+
+        <div id="cart-items">
+            <p>Je winkelwagen is leeg.</p>
+        </div>
+
+        <div class="cart-summary">
+
+            <h3>Totaal</h3>
+
+            <h1>€ <span id="total-price">0</span></h1>
+
+            <button id="checkout-btn">
+                Afrekenen
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="checkout" class="checkout">
+
+    <h2>📦 Bestellen</h2>
+
+    <form id="orderForm">
+
+        <div class="input-group">
+
+            <label>Naam</label>
+
+            <input
+                type="text"
+                placeholder="Jouw naam"
+                required
+            >
+
+        </div>
+
+        <div class="input-group">
+
+            <label>E-mailadres</label>
+
+            <input
+                type="email"
+                placeholder="naam@email.nl"
+                required
+            >
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Discord Gebruikersnaam</label>
+
+            <input
+                type="text"
+                placeholder="BlueWave#0001"
+                required
+            >
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Wat wil je bestellen?</label>
+
+            <textarea
+                rows="6"
+                placeholder="Beschrijf jouw bestelling..."
+                required
+            ></textarea>
+
+        </div>
+
+        <button type="submit" class="primary-btn">
+
+            Bestelling Verzenden
+
+        </button>
+
+    </form>
+
+</section>
+
+<section class="reviews">
+
+    <h2>⭐ Reviews</h2>
+
+    <div class="review-grid">
+
+        <div class="review">
+
+            <h3>★★★★★</h3>
+
+            <p>
+
+                Geweldige service!
+                Mijn Discord Bot werkt perfect.
+
+            </p>
+
+            <span>- Klant 1</span>
+
+        </div>
+
+        <div class="review">
+
+            <h3>★★★★★</h3>
+
+            <p>
+
+                Mooie website gekregen.
+                Zeker een aanrader!
+
+            </p>
+
+            <span>- Klant 2</span>
+
+        </div>
+
+        <div class="review">
+
+            <h3>★★★★★</h3>
+
+            <p>
+
+                Zeer snelle support
+                en professioneel werk.
+
+            </p>
+
+            <span>- Klant 3</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="faq">
+
+<h2>❓ Veelgestelde Vragen</h2>
+
+<div class="faq-item">
+
+<h3>Hoe lang duurt een bestelling?</h3>
+
+<p>
+Gemiddeld tussen de 1 en 7 dagen,
+afhankelijk van de grootte van het project.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Kan ik maatwerk aanvragen?</h3>
+
+<p>
+
+Ja.
+Alle bots,
+servers en websites
+kunnen volledig op maat gemaakt worden.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Hoe betaal ik?</h3>
+
+<p>
+
+Na overleg ontvang je een betaalverzoek
+via Discord of een andere afgesproken methode.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>📩 Contact</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Naam"
+required>
+
+<input
+type="email"
+placeholder="E-mailadres"
+required>
+
+<textarea
+rows="7"
+placeholder="Bericht..."
+required></textarea>
+
+<button type="submit">
+
+Versturen
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h2>BlueWave Development</h2>
+
+<p>
+
+Premium Discord Bots,
+Discord Servers
+en Websites.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Links</h3>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#team">Team</a></li>
+
+<li><a href="#shop">Bestellen</a></li>
+
+<li><a href="#cart">Winkelwagen</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Community</h3>
+
+<a
+href="https://discord.gg/jouwserver"
+target="_blank"
+class="discord-btn">
+
+Join Discord
+
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 BlueWave Development
+Alle rechten voorbehouden.
+
+</p>
+
+</footer>
+
+</body>
+</html>
